@@ -184,26 +184,13 @@ Real-life functions will usually be larger than the ones shown here--typically h
 > have a look at the [supplementary material]({{ page.root }}/14-supp-call-stack/).
 {: .callout}
 
-> ## Named Variables and the Scope of Variables
->
->  + Functions can accept arguments explicitly assigned to a variable name in
->    in the function call `functionName(variable = value)`, as well as arguments by
->    order:
-> ```{r}
-> input_1 <- 20
-> mySum <- function(input_1, input_2 = 10) {
->   output <- input_1 + input_2
->   return(output)
-> }
-> ```
->
-> 1.  Given the above code was run, which value does `mySum(input_1 = 1, 3)` produce?
->     1. 4
->     2. 11
->     3. 23
->     4. 30
-> 2.  If `mySum(3)` returns 13, why does `mySum(input_2 = 3)` return an error?
-{: .challenge}
+## Named Variables and the Scope of Variables
+
+Functions can accept arguments explicitly assigned to a variable name in
+in the function call `functionName(variable = value)`, as well as arguments by
+order:
+
+<iframe src="https://h5p.org/h5p/embed/461529" width="1090" height="410" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
 ### Testing and Documenting
 
